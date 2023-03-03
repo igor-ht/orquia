@@ -22,34 +22,20 @@
 .navbar {
 	--bs-navbar-toggler-icon-bg: url('/menu-icon.svg');
 
-	.offcanvas {
-		background-color: rgb(250, 231, 231);
-	}
-	.offcanvas-body {
-		.list-group {
-			a {
-				text-decoration: none;
-
-				&:hover {
-					color: rgb(33, 56, 228);
-				}
-			}
-		}
-	}
 	.button-toggler {
 		margin: 1rem;
 		background-color: rgba(190, 190, 190, 0.55);
-		box-shadow: 0px 0px 10px 0px white;
+		box-shadow: 0px 0px 10px 2px rgb(251, 1, 226);
 		border-radius: 10%;
 		border: 1px solid white;
 
 		&:hover {
 			background-color: white;
-			box-shadow: 0px 0px 10px 5px white;
+			box-shadow: 0px 0px 10px 6px rgb(255, 0, 230);
 		}
 		&:active {
 			background-color: white;
-			box-shadow: 0px 0px 15px 5px white;
+			box-shadow: 0px 0px 15px 7px rgb(255, 0, 183);
 		}
 	}
 	.navbar-toggler-icon {
@@ -59,6 +45,31 @@
 		height: 2rem;
 		width: 2rem;
 		background-color: rgba(250, 250, 250, 0);
+	}
+}
+
+.offcanvas.offcanvas-start {
+	background-color: rgb(255, 228, 252);
+
+	.offcanvas-title {
+		color: rgb(216, 59, 164);
+	}
+	.offcanvas-body {
+		.list-group {
+			a {
+				text-decoration: none;
+
+				&:hover {
+					color: rgb(33, 56, 228);
+				}
+				.span-anchor {
+					display: block;
+					width: 100%;
+					color: rgb(221, 70, 173);
+					font-size: 1.2rem;
+				}
+			}
+		}
 	}
 }
 

@@ -5,9 +5,14 @@
 }
 
 .about-us-content {
-	width: 88vw;
+	width: 90vw;
 	border: 1px solid rgba(255, 255, 255, 0.676);
 	background-color: rgba(252, 206, 214, 0.568);
+	overflow: auto;
+
+	&::-webkit-scrollbar {
+		display: none;
+	}
 
 	p {
 		margin: 1em;

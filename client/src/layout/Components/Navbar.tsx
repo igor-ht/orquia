@@ -31,7 +31,7 @@ export default function NavbarOffCanvas() {
 							<Link
 								to={'/'}
 								onClick={handleClose}>
-								Início
+								<span className="span-anchor">Início</span>
 							</Link>
 						</ListGroup.Item>
 						<ListGroup.Item
@@ -40,7 +40,7 @@ export default function NavbarOffCanvas() {
 							<Link
 								to={'/produtos'}
 								onClick={handleClose}>
-								Produtos
+								<span className="span-anchor">Produtos</span>
 							</Link>
 						</ListGroup.Item>
 						<ListGroup.Item
@@ -49,7 +49,7 @@ export default function NavbarOffCanvas() {
 							<Link
 								to={'/sobre-nos'}
 								onClick={handleClose}>
-								Sobre nós
+								<span className="span-anchor">Sobre nós</span>
 							</Link>
 						</ListGroup.Item>
 						<ListGroup.Item
@@ -58,7 +58,7 @@ export default function NavbarOffCanvas() {
 							<Link
 								to={'/entre-em-contato'}
 								onClick={handleClose}>
-								Entre em contato
+								<span className="span-anchor">Entre em contato</span>
 							</Link>
 						</ListGroup.Item>
 						<ListGroup.Item

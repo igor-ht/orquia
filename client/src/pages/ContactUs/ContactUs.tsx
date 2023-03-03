@@ -29,7 +29,7 @@ export default function ContactUs() {
 					<Form.Label>Nome</Form.Label>
 					<Form.Control
 						type="text"
-						placeholder="nome"
+						placeholder="Seu nome"
 						name="name"
 						required
 						onChange={(event) =>
