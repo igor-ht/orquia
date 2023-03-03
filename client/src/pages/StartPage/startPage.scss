@@ -1,0 +1,25 @@
+// .start-page {
+// 	overflow: auto;
+
+// 	&::-webkit-scrollbar {
+// 		display: none;
+// 	}
+// }
+
+.carousel-container {
+	height: 85vh;
+	overflow: hidden;
+
+	img {
+		height: 82vh;
+		width: 100vw;
+		object-fit: cover;
+	}
+}
+
+.products-list-display {
+	height: 82vh;
+	display: flex;
+	flex-direction: row;
+	margin: 1em;
+}

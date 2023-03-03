@@ -1,0 +1,44 @@
+.contact-us {
+	height: 85vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	background-color: rgba(255, 255, 255, 0.623);
+	overflow: hidden;
+
+	form {
+		height: 82vh;
+		width: 88vw;
+		margin: 1em;
+		align-self: center;
+
+		textarea {
+			resize: none;
+		}
+	}
+
+	.contacts {
+		width: 85vw;
+		align-self: center;
+		justify-content: center;
+
+		img {
+			float: right;
+			justify-self: center;
+			align-self: center;
+		}
+
+		button {
+			background-color: rgb(220, 94, 216);
+			border: 1px solid white;
+
+			&:hover {
+				box-shadow: 0px 0px 10px 1px white;
+			}
+			&:active {
+				background-color: rgb(227, 50, 180);
+				box-shadow: 0px 0px 15px 3px white;
+			}
+		}
+	}
+}
