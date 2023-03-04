@@ -6,7 +6,7 @@
 	width: 100vw;
 	position: absolute;
 	object-fit: cover;
-	opacity: 0.65;
+	opacity: 0.6;
 }
 
 .app-container {
@@ -21,6 +21,7 @@
 
 .navbar {
 	--bs-navbar-toggler-icon-bg: url('/menu-icon.svg');
+	justify-content: space-between;
 
 	.button-toggler {
 		margin: 1rem;
@@ -45,6 +46,13 @@
 		height: 2rem;
 		width: 2rem;
 		background-color: rgba(250, 250, 250, 0);
+	}
+
+	.orquia-logo {
+		margin: 1em;
+		align-self: center;
+		object-fit: cover;
+		box-shadow: inset;
 	}
 }
 

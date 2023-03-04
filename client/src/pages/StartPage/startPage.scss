@@ -1,19 +1,15 @@
-// .start-page {
-// 	overflow: auto;
-
-// 	&::-webkit-scrollbar {
-// 		display: none;
-// 	}
-// }
-
 .carousel-container {
-	height: 85vh;
 	overflow: hidden;
 
-	img {
-		height: 83vh;
-		width: 100vw;
-		object-fit: cover;
+	.carousel-item {
+		background-color: rgba(255, 255, 255, 0.071);
+		img {
+			width: 100vw;
+			object-fit: cover;
+		}
+		.carousel-indicators {
+			margin-bottom: 0;
+		}
 	}
 }
 
@@ -22,4 +18,18 @@
 	display: flex;
 	flex-direction: row;
 	margin: 1em;
+}
+
+@media (min-width: 900px) {
+	.carousel-container {
+		overflow: hidden;
+		.carousel-item {
+			text-align: center;
+
+			img {
+				height: 85vh;
+				width: auto;
+			}
+		}
+	}
 }

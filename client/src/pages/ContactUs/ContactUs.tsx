@@ -79,14 +79,26 @@ export default function ContactUs() {
 					<a
 						href="mailto: orquiacosmeticos@gmail.com"
 						target={'_blank'}>
-						<img src="/email-icon.svg" />
+						<img
+							src="/email-icon.svg"
+							alt="Envie um email para Orquia"
+						/>
 					</a>
 					<a
 						href="https://www.whatsapp.com/catalog/5516991645665/?app_absent=0"
 						target={'_blank'}>
 						<img
-							className="mt-1 me-2"
+							className="mt-1 ms-1"
 							src="/whatsapp-icon.svg"
+							alt="Orquia WhatssApp"
+						/>
+					</a>
+					<a
+						href="https://instagram.com/orquia.cosmeticos"
+						target={'_blank'}>
+						<img
+							src="/instagram-icon.svg"
+							alt="Orquia Instagram Profile"
 						/>
 					</a>
 				</div>

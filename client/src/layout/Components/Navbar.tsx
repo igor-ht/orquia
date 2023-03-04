@@ -73,6 +73,13 @@ export default function NavbarOffCanvas() {
 					</ListGroup>
 				</Offcanvas.Body>
 			</Offcanvas>
+
+			<Link to={'/'}>
+				<img
+					className="orquia-logo"
+					src="/orquia.logo.svg"
+				/>
+			</Link>
 		</Navbar>
 	);
 }
