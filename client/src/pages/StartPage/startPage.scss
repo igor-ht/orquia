@@ -1,22 +1,52 @@
+.collections {
+	display: flex;
+	justify-content: center;
+	height: 10vh;
+	overflow: hidden;
+
+	button {
+		border: 1px solid white;
+		margin: 0.5em;
+		text-align: center;
+
+		&:hover {
+			box-shadow: 0px 0px 5px 2px white;
+			border: 1px solid white;
+		}
+	}
+	.amar-e-cuidar {
+		background-color: rgb(255, 145, 237);
+
+		&:active {
+			background-color: rgb(248, 113, 226);
+			box-shadow: 0px 0px 6px 3px white;
+			border: 1px solid white;
+		}
+	}
+	.essenciais {
+		background-color: rgb(65, 65, 255);
+		&:active {
+			background-color: rgb(47, 47, 255);
+			box-shadow: 0px 0px 6px 3px white;
+			border: 1px solid white;
+		}
+	}
+}
+
 .carousel-container {
 	overflow: hidden;
+	margin-top: 1em;
+
+	.carousel-dark .carousel-indicators [data-bs-target] {
+		background-color: #0000004f;
+	}
 
 	.carousel-item {
 		img {
 			width: 100vw;
 			object-fit: cover;
 		}
-		.carousel-indicators {
-			margin-bottom: 0;
-		}
 	}
-}
-
-.products-list-display {
-	height: 82vh;
-	display: flex;
-	flex-direction: row;
-	margin: 1em;
 }
 
 @media (min-width: 900px) {
@@ -26,7 +56,7 @@
 			text-align: center;
 
 			img {
-				height: 85vh;
+				height: 70vh;
 				width: auto;
 			}
 		}
