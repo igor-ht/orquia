@@ -20,12 +20,12 @@ export default function StartPageCarousel() {
 					<span
 						className="amar-e-cuidar"
 						onClick={() => setCollectionDisplayed('love')}>
-						<b>'Amar e Cuidar'</b>
+						<b>Amar e Cuidar</b>
 					</span>
 					<span
 						className="essenciais"
 						onClick={() => setCollectionDisplayed('essential')}>
-						<b>'Essenciais'</b>
+						<b>Essenciais</b>
 					</span>
 				</div>
 			</div>

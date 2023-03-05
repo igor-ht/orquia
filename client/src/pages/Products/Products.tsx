@@ -1,24 +1,20 @@
 import './products.scss';
 import Tab from 'react-bootstrap/Tab';
 import Tabs from 'react-bootstrap/Tabs';
+import Shampoo from './components/Shampoo/Shampoo';
 
 export default function Products() {
 	return (
 		<main className="products">
 			<Tabs
-				defaultActiveKey="shampoo"
+				defaultActiveKey="shampoo-condicionador"
 				id="justify-tab-example"
-				className="mb-3 titles"
+				className="titles"
 				justify>
 				<Tab
-					eventKey="shampoo"
-					title="Shampoo">
-					<>Shampoo</>
-				</Tab>
-				<Tab
-					eventKey="condicionador"
-					title="Condicionador">
-					<>Condicionador</>
+					eventKey="shampoo-condicionador"
+					title="Shampoo e Condicionador">
+					<Shampoo />
 				</Tab>
 				<Tab
 					eventKey="corpo"

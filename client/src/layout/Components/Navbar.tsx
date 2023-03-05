@@ -61,15 +61,6 @@ export default function NavbarOffCanvas() {
 								<span className="span-anchor">Entre em contato</span>
 							</Link>
 						</ListGroup.Item>
-						<ListGroup.Item
-							action
-							variant="danger"></ListGroup.Item>
-						<ListGroup.Item
-							action
-							variant="success"></ListGroup.Item>
-						<ListGroup.Item
-							action
-							variant="dark"></ListGroup.Item>
 					</ListGroup>
 				</Offcanvas.Body>
 			</Offcanvas>
