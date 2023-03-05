@@ -1,41 +1,67 @@
-.collections {
-	display: flex;
-	justify-content: center;
-	height: 10vh;
+.start-page {
 	overflow: hidden;
+}
 
-	button {
-		border: 1px solid white;
-		margin: 0.5em;
+.collections {
+	display: grid;
+	grid-template-columns: 100%;
+	grid-template-rows: 60% 40%;
+	justify-content: center;
+	height: 15vh;
+	width: 89vw;
+	margin-left: 5%;
+	border: 0.5px solid white;
+
+	.collection-title {
 		text-align: center;
-
-		&:hover {
-			box-shadow: 0px 0px 5px 2px white;
-			border: 1px solid white;
+		margin: 5px;
+		h1 {
+			align-self: center;
+			text-shadow: 0px 0px 20px white;
+			color: rgb(138, 0, 46);
 		}
 	}
+	.collection-options {
+		display: flex;
+	}
+
+	span {
+		text-align: center;
+		width: 49%;
+		margin: 5px;
+		box-shadow: 0px 0px 10px 2px white;
+		border-radius: 6%;
+		cursor: pointer;
+		transition: background-color 2s, box-shadow 1s;
+	}
 	.amar-e-cuidar {
-		background-color: rgb(255, 145, 237);
+		background-color: rgba(255, 192, 203, 0.612);
+
+		&:hover {
+			background-color: rgb(255, 192, 203);
+			box-shadow: 0px 0px 15px 4px white;
+		}
 
 		&:active {
-			background-color: rgb(248, 113, 226);
-			box-shadow: 0px 0px 6px 3px white;
-			border: 1px solid white;
+			box-shadow: 0px 0 10px 5px white;
 		}
 	}
 	.essenciais {
-		background-color: rgb(65, 65, 255);
+		background-color: rgba(173, 216, 230, 0.648);
+
+		&:hover {
+			background-color: rgb(173, 216, 230);
+			box-shadow: 0px 0px 15px 4px white;
+		}
 		&:active {
-			background-color: rgb(47, 47, 255);
-			box-shadow: 0px 0px 6px 3px white;
-			border: 1px solid white;
+			box-shadow: 0px 0 10px 5px white;
 		}
 	}
 }
 
 .carousel-container {
 	overflow: hidden;
-	margin-top: 1em;
+	margin-top: 5px;
 
 	.carousel-dark .carousel-indicators [data-bs-target] {
 		background-color: #0000004f;

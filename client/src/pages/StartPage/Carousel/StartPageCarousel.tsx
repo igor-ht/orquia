@@ -1,23 +1,33 @@
 import { useState } from 'react';
-import Button from 'react-bootstrap/Button';
 import Carousel from 'react-bootstrap/Carousel';
 
 export default function StartPageCarousel() {
-	const [collectionDisplayed, setCollectionDisplayed] = useState<'love' | 'essential'>('love');
+	const [collectionDisplayed, setCollectionDisplayed] = useState<'love' | 'essential' | ''>('');
 
 	return (
 		<>
 			<div className="collections">
-				<Button
-					className="amar-e-cuidar"
-					onClick={() => setCollectionDisplayed('love')}>
-					Linha <b>'Amar e Cuidar'</b>
-				</Button>
-				<Button
-					className="essenciais"
-					onClick={() => setCollectionDisplayed('essential')}>
-					Linha <b>'Essenciais'</b>
-				</Button>
+				<div className="collection-title">
+					{collectionDisplayed === '' ? (
+						<h1>Coleções</h1>
+					) : collectionDisplayed === 'love' ? (
+						<h1>Linha Amar e Cuidar</h1>
+					) : (
+						<h1>Linha Essenciais</h1>
+					)}
+				</div>
+				<div className="collection-options">
+					<span
+						className="amar-e-cuidar"
+						onClick={() => setCollectionDisplayed('love')}>
+						<b>'Amar e Cuidar'</b>
+					</span>
+					<span
+						className="essenciais"
+						onClick={() => setCollectionDisplayed('essential')}>
+						<b>'Essenciais'</b>
+					</span>
+				</div>
 			</div>
 			<div className="carousel-container">
 				{collectionDisplayed === 'love' ? (
