@@ -1,109 +1,131 @@
 .products {
-	height: 85vh;
+	height: -webkit-fill-available;
 	background-color: rgba(255, 255, 255, 0.549);
+	position: sticky;
+	display: flex;
+	flex-direction: column;
+
+	ul {
+		border-radius: 3%;
+
+		li {
+			border-radius: 3%;
+			button {
+				height: 100%;
+				border-radius: 3%;
+			}
+		}
+	}
 
 	.tab-content {
-		height: 80vh;
-		overflow-x: auto;
-		overflow-y: hidden;
+		height: auto;
+		overflow: auto;
 	}
 
 	.titles {
 		font-weight: 600;
+		font-size: large;
 		text-align: center;
 	}
 
 	.product-container {
-		height: 80vh;
-		display: grid;
-		grid-template-columns: 50% 50%;
-		grid-template-rows: 100%;
-		justify-items: center;
+		flex-basis: 80%;
+		display: flex;
+		flex-wrap: wrap;
 		overflow: auto;
-		align-items: center;
-		text-align: center;
+		justify-content: space-evenly;
+
+		&::-webkit-scrollbar {
+			display: none;
+		}
 
 		p {
+			flex-basis: 50%;
+			font-size: larger;
 			text-align: justify;
-			text-indent: 5%;
-			font-size: x-large;
-			margin-left: 5%;
+			margin: 2rem;
 		}
 
 		img {
-			height: 72vh;
-			width: auto;
+			flex-basis: 30%;
+			height: 70vh;
+			width: 50vw;
 			object-fit: cover;
-			border: 1px solid white;
-			margin-bottom: 4vh;
+			margin: 1rem;
 		}
 	}
 }
 
-.green-apple {
-	background-color: rgba(186, 253, 186, 0.649);
+.accordion {
+	height: -webkit-fill-available;
+	overflow: auto;
+	&::-webkit-scrollbar {
+		display: none;
+	}
+}
+.accordion-item {
+	background-color: rgba(255, 255, 255, 0);
+}
 
-	p {
-		margin-top: 15px;
-	}
-	img {
-		margin-top: 25px;
-	}
+.accordion-body {
+	padding: 0;
+	overflow: auto;
+}
+.accordion-collapse.collapse.show {
+	background-color: rgba(255, 255, 255, 0);
+}
+
+// SHAMPOO&CONDITIONER STYLING
+.product-container.green-apple {
+	background-color: rgba(186, 253, 186, 0.649);
 }
 
 .product-container.cherry {
 	background-color: rgba(255, 195, 204, 0.764);
+}
+
+// BODY STYLING
+.product-container.shower-gel {
+	background-color: rgba(176, 233, 252, 0.75);
+}
+.product-container.body-lotion {
+	background-color: rgba(182, 79, 182, 0.607);
 
 	p {
-		width: 60vw;
-		margin-left: 30%;
+		color: white;
 	}
 }
-// for screen SMALLER than 600px
-@media (max-width: 600px) {
-	.products {
-		height: 85vh;
-		background-color: rgba(255, 255, 255, 0.549);
 
-		.tab-content {
-			height: 69vh;
-			overflow-x: auto;
-			overflow-y: hidden;
-		}
+// for screen SMALLER than 500px
+@media (max-width: 500px) {
+	.accordion-collapse.collapse.show {
+		overflow: auto;
+	}
+	.products {
+		background-color: rgba(255, 255, 255, 0.549);
 
 		.titles {
 			font-weight: 400;
 			text-align: center;
+			font-size: medium;
 		}
 
 		.product-container {
 			width: 99vw;
-			height: 70vh;
-			display: flex;
-			flex-direction: column;
-			text-align: center;
-			overflow-y: auto;
-			overflow-x: hidden;
-			margin: 1%;
+			overflow: auto;
+
 			p {
-				text-align: justify;
-				text-indent: 3%;
-				font-size: medium;
-				margin: 3%;
+				flex-basis: 90%;
+				margin: 0.5rem;
 			}
 
 			img {
-				width: 95vw;
-				object-fit: cover;
-				border: 1px solid white;
-				margin: 2%;
+				flex-basis: 95%;
+				width: 85vw;
+				height: auto;
+				object-fit: contain;
+				margin: 0.5rem;
 			}
-		}
-	}
-	.product-container.cherry {
-		p {
-			width: 90vw;
-			margin-bottom: 5px;
 		}
 	}
 }

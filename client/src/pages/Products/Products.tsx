@@ -1,7 +1,8 @@
 import './products.scss';
 import Tab from 'react-bootstrap/Tab';
 import Tabs from 'react-bootstrap/Tabs';
-import Shampoo from './components/Shampoo/Shampoo';
+import Body from './components/Body/Body';
+import ShampooAndConditioner from './components/Shampoo&Conditioner/Shampoo&Conditioner';
 
 export default function Products() {
 	return (
@@ -14,12 +15,12 @@ export default function Products() {
 				<Tab
 					eventKey="shampoo-condicionador"
 					title="Shampoo e Condicionador">
-					<Shampoo />
+					<ShampooAndConditioner />
 				</Tab>
 				<Tab
 					eventKey="corpo"
 					title="Corpo">
-					<>Lavagem corporal</>
+					<Body />
 				</Tab>
 				<Tab
 					eventKey="rosto"
