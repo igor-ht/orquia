@@ -71,7 +71,8 @@
 	margin-top: 5px;
 
 	.carousel-dark .carousel-indicators [data-bs-target] {
-		background-color: #0000004f;
+		background-color: #00000092;
+		margin-bottom: 0;
 	}
 
 	.carousel-item {
@@ -84,14 +85,30 @@
 }
 
 @media (min-width: 900px) {
+	.start-page {
+		height: -webkit-fill-available;
+	}
+	.collections {
+		height: 18%;
+	}
+	.carousel.slide.carousel-dark {
+		height: -webkit-fill-available;
+	}
+	.carousel-inner {
+		height: -webkit-fill-available;
+	}
 	.carousel-container {
+		height: 82%;
 		overflow: hidden;
 		.carousel-item {
+			height: -webkit-fill-available;
 			text-align: center;
 
 			img {
-				height: 70vh;
-				width: auto;
+				height: auto;
+				width: 35%;
+				object-fit: cover;
+				margin-top: 0.5rem;
 			}
 		}
 	}
