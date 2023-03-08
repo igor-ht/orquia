@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import Carousel from 'react-bootstrap/Carousel';
 
-export default function StartPageCarousel() {
+export default function CatalogCarousel() {
 	const [collectionDisplayed, setCollectionDisplayed] = useState<'love' | 'essential' | ''>('');
 
 	return (
@@ -120,12 +120,6 @@ export default function StartPageCarousel() {
 						<Carousel.Item>
 							<img
 								src="/carousel/essential/pic9.jpg"
-								alt="Third slide"
-							/>
-						</Carousel.Item>
-						<Carousel.Item>
-							<img
-								src="/carousel/love/pic5.jpg"
 								alt="Third slide"
 							/>
 						</Carousel.Item>

@@ -1,10 +1,10 @@
 import './startPage.scss';
-import StartPageCarousel from './Carousel/StartPageCarousel';
+import CatalogCarousel from './CatalogCarousel';
 
 export default function StartPage() {
 	return (
 		<div className="start-page">
-			<StartPageCarousel />
+			<CatalogCarousel />
 		</div>
 	);
 }
