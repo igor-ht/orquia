@@ -4,6 +4,10 @@ export default function AboutUs() {
 	return (
 		<main className="about-us">
 			<div className="about-us-content">
+				<img
+					src="/quem-somos.png"
+					alt=""
+				/>
 				<p>
 					Bem-vindo à Orquia Cosméticos, uma empresa que acredita em oferecer produtos de alta qualidade e respeitando o meio ambiente. Nós
 					acreditamos que o uso de ingredientes naturais é a chave para uma pele saudável e um cabelo bem cuidado, e é por isso que todos os
