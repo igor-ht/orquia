@@ -20,6 +20,9 @@
 	.tab-content {
 		height: auto;
 		overflow: auto;
+		&::-webkit-scrollbar {
+			display: none;
+		}
 	}
 
 	.titles {
@@ -91,6 +94,31 @@
 .product-container.body-lotion {
 	background-color: rgba(182, 79, 182, 0.607);
 
+	p {
+		color: white;
+	}
+}
+
+// FACE STYLING
+.product-container.face-soap {
+	background-color: rgba(255, 20, 145, 0.502);
+	p {
+		color: white;
+	}
+}
+.product-container.face-cream {
+	background-color: rgba(255, 192, 203, 0.594);
+}
+.product-container.face-exfoliante {
+	background-color: rgba(0, 234, 144, 0.619);
+}
+
+// SERUM STYLING
+.product-container.serum-vitaminc {
+	background-color: rgba(255, 166, 0, 0.645);
+}
+.product-container.serum-revitalizing {
+	background-color: rgba(33, 33, 255, 0.608);
 	p {
 		color: white;
 	}

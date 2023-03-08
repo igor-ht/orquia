@@ -101,15 +101,19 @@
 		height: 82%;
 		overflow: hidden;
 		.carousel-item {
-			height: -webkit-fill-available;
+			height: 100%;
 			text-align: center;
 
 			img {
 				height: auto;
-				width: 35%;
-				object-fit: cover;
+				width: 34%;
+				object-fit: contain;
 				margin-top: 0.5rem;
+				margin-bottom: 0;
 			}
 		}
+	}
+	.carousel-indicators {
+		margin-bottom: 0;
 	}
 }

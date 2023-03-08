@@ -3,6 +3,8 @@ import Tab from 'react-bootstrap/Tab';
 import Tabs from 'react-bootstrap/Tabs';
 import Body from './components/Body/Body';
 import ShampooAndConditioner from './components/Shampoo&Conditioner/Shampoo&Conditioner';
+import Face from './components/Face/Face';
+import Seruns from './components/Seruns/Seruns';
 
 export default function Products() {
 	return (
@@ -25,12 +27,12 @@ export default function Products() {
 				<Tab
 					eventKey="rosto"
 					title="Rosto">
-					<>Lavagem rosto</>
+					<Face />
 				</Tab>
 				<Tab
 					eventKey="serum"
-					title="Seruns">
-					<>Séruns</>
+					title="Séruns">
+					<Seruns />
 				</Tab>
 				<Tab
 					eventKey="gel"
@@ -40,7 +42,7 @@ export default function Products() {
 				<Tab
 					eventKey="outros"
 					title="Outros">
-					<></>
+					<>Outros</>
 				</Tab>
 			</Tabs>
 		</main>
