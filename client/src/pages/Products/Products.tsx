@@ -5,6 +5,8 @@ import Body from './components/Body/Body';
 import ShampooAndConditioner from './components/Shampoo&Conditioner/Shampoo&Conditioner';
 import Face from './components/Face/Face';
 import Seruns from './components/Seruns/Seruns';
+import HandsAndFoot from './components/Hands&Foot/Hands&Foot';
+import Others from './components/Others/Others';
 
 export default function Products() {
 	return (
@@ -30,19 +32,19 @@ export default function Products() {
 					<Face />
 				</Tab>
 				<Tab
+					eventKey="gel"
+					title="Mãos e Pés">
+					<HandsAndFoot />
+				</Tab>
+				<Tab
 					eventKey="serum"
 					title="Séruns">
 					<Seruns />
 				</Tab>
 				<Tab
-					eventKey="gel"
-					title="Géis">
-					<>Géis</>
-				</Tab>
-				<Tab
 					eventKey="outros"
 					title="Outros">
-					<>Outros</>
+					<Others />
 				</Tab>
 			</Tabs>
 		</main>

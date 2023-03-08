@@ -113,6 +113,17 @@
 	background-color: rgba(0, 234, 144, 0.619);
 }
 
+// HANDS&FOOT STYLING
+.product-container.hand-cream {
+	background-color: rgba(188, 188, 120, 0.69);
+}
+.product-container.foot-cream {
+	background-color: rgba(0, 0, 255, 0.579);
+	p {
+		color: white;
+	}
+}
+
 // SERUM STYLING
 .product-container.serum-vitaminc {
 	background-color: rgba(255, 166, 0, 0.645);
@@ -122,6 +133,14 @@
 	p {
 		color: white;
 	}
+}
+
+// OTHER
+.product-container.home-spray {
+	background-color: rgba(251, 225, 191, 0.622);
+}
+.product-container.car-air-freshener {
+	background-color: rgba(173, 158, 138, 0.671);
 }
 
 // for screen SMALLER than 500px
