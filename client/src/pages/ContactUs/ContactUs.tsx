@@ -1,7 +1,9 @@
 import './contactUs.scss';
-import { useState, FormEvent } from 'react';
+import { useState } from 'react';
+import { useForm } from '@formspree/react';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
+import Modal from 'react-bootstrap/Modal';
 
 type contactObj = {
 	name: string;
@@ -15,14 +17,33 @@ export default function ContactUs() {
 		email: '',
 		message: '',
 	});
+	const [state, handleSubmit] = useForm('xayzbwjz');
+	const [goodAlertShow, setGoodAlertShow] = useState(false);
 
-	const handleSubmition = (event: FormEvent<HTMLFormElement>) => {
-		event.preventDefault();
-	};
-
+	if (state.succeeded) {
+		return (
+			<Modal
+				size="sm"
+				show={goodAlertShow}
+				onHide={() => {
+					setGoodAlertShow(false);
+					handleSubmit(false);
+				}}
+				aria-labelledby="example-modal-sizes-title-sm">
+				<Modal.Header closeButton>
+					<Modal.Title id="example-modal-sizes-title-sm">Orquiá Cosméticos</Modal.Title>
+				</Modal.Header>
+				<Modal.Body>Recebemos sua mensagem e entraremos em contato.</Modal.Body>
+			</Modal>
+		);
+	}
 	return (
 		<main className="contact-us">
-			<Form onSubmit={handleSubmition}>
+			<Form
+				onSubmit={async (event) => {
+					await handleSubmit(event);
+					setGoodAlertShow(true);
+				}}>
 				<Form.Group
 					className="mb-3 mt-3"
 					controlId="exampleForm.ControlInput1">
@@ -75,7 +96,11 @@ export default function ContactUs() {
 					/>
 				</Form.Group>
 				<div className="mb-3 contacts">
-					<Button type="submit">Submit</Button>
+					<Button
+						type="submit"
+						disabled={state.submitting}>
+						Enviar
+					</Button>
 					<a
 						href="mailto: orquiacosmeticos@gmail.com"
 						target={'_blank'}>
