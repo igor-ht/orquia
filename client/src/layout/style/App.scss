@@ -1,5 +1,20 @@
 @import '../../../node_modules/bootstrap/dist/css/bootstrap.min.css';
 
+@media (max-width: 500px) {
+	body {
+		overflow: hidden;
+	}
+	#root {
+		overflow: hidden;
+	}
+	.app-container {
+		overflow: hidden;
+	}
+	footer {
+		display: none;
+	}
+}
+
 .background-image {
 	background-color: rgb(252, 205, 213);
 	height: 100vh;
