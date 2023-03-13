@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Satisfy');
+
 .start-page {
 	overflow: hidden;
 }
@@ -17,7 +19,7 @@
 		text-align: center;
 		margin: 5px;
 		h1 {
-			align-self: center;
+			font-family: 'satisfy';
 			text-shadow: 0px 0px 20px white;
 			color: rgb(138, 0, 46);
 			margin: 0;
@@ -37,6 +39,8 @@
 		cursor: pointer;
 		transition: background-color 2s, box-shadow 1s;
 		p {
+			font-family: 'satisfy';
+			font-size: large;
 			margin: 0;
 			margin-top: 5px;
 		}
@@ -99,7 +103,7 @@
 	}
 	.carousel-container {
 		height: 82%;
-		
+
 		.carousel-item {
 			height: 100%;
 			text-align: center;
