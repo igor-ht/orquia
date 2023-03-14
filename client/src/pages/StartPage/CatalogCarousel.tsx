@@ -66,6 +66,30 @@ export default function CatalogCarousel() {
 								alt="Third slide"
 							/>
 						</Carousel.Item>
+						<Carousel.Item>
+							<img
+								src="/carousel/love/pic6.jpg"
+								alt="Third slide"
+							/>
+						</Carousel.Item>
+						<Carousel.Item>
+							<img
+								src="/carousel/love/pic7.jpg"
+								alt="Third slide"
+							/>
+						</Carousel.Item>
+						<Carousel.Item>
+							<img
+								src="/carousel/love/pic8.jpg"
+								alt="Third slide"
+							/>
+						</Carousel.Item>
+						<Carousel.Item>
+							<img
+								src="/carousel/love/pic9.jpg"
+								alt="Third slide"
+							/>
+						</Carousel.Item>
 					</Carousel>
 				) : (
 					<Carousel variant="dark">
