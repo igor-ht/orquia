@@ -2,16 +2,16 @@
 
 .background-image {
 	background-color: rgb(252, 205, 213);
-	height: 100vh;
-	width: 100vw;
+	height: 100dvh;
+	width: 100dvw;
 	position: absolute;
 	object-fit: cover;
 	opacity: 0.75;
 }
 
 .app-container {
-	height: 100vh;
-	width: 100vw;
+	height: 100dvh;
+	width: 100dvw;
 	position: fixed;
 	display: grid;
 	grid-template-columns: 1fr;
