@@ -1,4 +1,4 @@
-@import '../../../node_modules/bootstrap/dist/css/bootstrap.min.css';
+@import "../../../node_modules/bootstrap/dist/css/bootstrap.min.css";
 
 .background-image {
 	background-color: rgb(252, 205, 213);
@@ -20,7 +20,7 @@
 }
 
 .navbar {
-	--bs-navbar-toggler-icon-bg: url('/menu-icon.svg');
+	--bs-navbar-toggler-icon-bg: url("/menu-icon.svg");
 	justify-content: space-between;
 
 	.button-toggler {
@@ -102,5 +102,12 @@
 	}
 	footer {
 		display: none;
+	}
+
+	.navbar {
+		.button-toggler {
+			height: 45px;
+			width: 45px;
+		}
 	}
 }
