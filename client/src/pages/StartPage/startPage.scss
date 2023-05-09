@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Satisfy');
+@import url("https://fonts.googleapis.com/css?family=Satisfy");
 
 .start-page {
 	overflow: hidden;
@@ -9,8 +9,8 @@
 	grid-template-columns: 100%;
 	grid-template-rows: 60% 40%;
 	justify-content: center;
-	height: 15vh;
-	width: 89vw;
+	height: 15dvh;
+	width: 89dvw;
 	margin-left: 5%;
 	border: 0.5px solid white;
 	border-radius: 5px;
@@ -19,7 +19,7 @@
 		text-align: center;
 		margin: 5px;
 		h1 {
-			font-family: 'satisfy';
+			font-family: "satisfy";
 			text-shadow: 0px 0px 20px white;
 			color: rgb(138, 0, 46);
 			margin: 0;
@@ -39,7 +39,7 @@
 		cursor: pointer;
 		transition: background-color 2s, box-shadow 1s;
 		p {
-			font-family: 'satisfy';
+			font-family: "satisfy";
 			font-size: large;
 			margin: 0;
 			margin-top: 5px;
@@ -81,7 +81,7 @@
 
 	.carousel-item {
 		img {
-			width: 100vw;
+			width: 100dvw;
 			object-fit: cover;
 			margin-top: 2em;
 		}
@@ -90,16 +90,16 @@
 
 @media (min-width: 900px) {
 	.start-page {
-		height: -webkit-fill-available;
+		height: 100%;
 	}
 	.collections {
 		height: 18%;
 	}
 	.carousel.slide.carousel-dark {
-		height: -webkit-fill-available;
+		height: 100%;
 	}
 	.carousel-inner {
-		height: -webkit-fill-available;
+		height: 100%;
 	}
 	.carousel-container {
 		height: 82%;

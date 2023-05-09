@@ -1,11 +1,11 @@
 .about-us {
-	height: 85vh;
+	height: 85dvh;
 	display: flex;
 	justify-content: center;
 }
 
 .about-us-content {
-	width: 90vw;
+	width: 90dvw;
 	border: 1px solid rgba(255, 255, 255, 0.676);
 	background-color: rgba(67, 254, 148, 0.568);
 	overflow: auto;
@@ -24,7 +24,7 @@
 	}
 
 	img {
-		width: 30vw;
+		width: 30dvw;
 		height: auto;
 		object-fit: contain;
 		margin: 1em;
@@ -38,7 +38,7 @@
 		text-align: center;
 
 		img {
-			width: 80vw;
+			width: 80dvw;
 		}
 		p {
 			margin: 1.5em;
