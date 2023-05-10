@@ -1,12 +1,12 @@
 # Orquia Portfolio
 
-#### <u>Single-Page App:</u>
+#### <u>Serverless App:</u>
 
     Vite, React, TypeScript, SCSS, BootStrap and React-BootStrap.
 
 # Development Goals:
 
-Create and deploy a single page app within a week with React.
+Create and deploy a serverless app within a week with React.
 
 ## App Commands
 
