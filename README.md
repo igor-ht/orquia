@@ -2,11 +2,11 @@
 
 #### <u>Serverless App:</u>
 
-    Vite, React, TypeScript, SCSS, BootStrap and React-BootStrap.
+    Vite, React, TypeScript, SASS, BootStrap and React-BootStrap.
 
 # Development Goals:
 
-Create and deploy a serverless app within a week with React.
+Create and deploy a serverless portfolio app within a week with React.
 
 ## App Commands
 
